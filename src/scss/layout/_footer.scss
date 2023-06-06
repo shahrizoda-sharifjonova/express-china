@@ -1,1 +1,110 @@
-// Футер
+.footer{
+    background: #373C44;
+    padding: 60px 0;
+    @include media(992){
+        padding-top: 44px;
+        padding-bottom: 60px;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 48px;
+        @include media(992){
+            flex-direction: column;
+        }
+        @include media(768){
+            margin-bottom: 30px;
+        }
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        @include media(768){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    .logo{
+        display: block;
+        @include media(992){
+            margin-bottom: 30px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 47px;
+            text-transform: uppercase;
+            color: #F6F6F6;
+            @include media(768){
+                font-size: 25px;
+                line-height: 29px;
+            }
+        }
+        span{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #C8A35F;
+            @include media(768){         
+                font-size: 11px;
+                line-height: 13px;
+            }       
+        }
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #AEB5BF;
+        max-width: 340px;
+        width: 100%;
+        @include media(768){
+            font-size: 12px;
+            line-height: 130%;
+            margin-bottom: 10px;
+            max-width: 275px;
+            width: 100%;
+        }
+    }
+    &__info{
+        display: flex;
+        @include media(768){
+            flex-direction: column;
+        }
+    }
+    &__p{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 130%;
+        color: #F6F6F6;
+        @include media(768){
+            font-size: 16px;
+            line-height: 130%;
+        }
+        &:first-of-type{
+            margin-right: 28px;
+            @include media(768){
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &__link{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: #AEB5BF;
+        text-align: right;
+        display: block;
+        @include media(768){
+            font-size: 12px;
+            line-height: 130%;
+        }
+    }
+}

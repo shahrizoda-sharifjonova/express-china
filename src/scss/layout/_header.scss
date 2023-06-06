@@ -115,7 +115,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        width: 350px;
+        width: 440px;
         height: 100vh;
         background: #282A2D;
         backdrop-filter: blur(7.5px);
@@ -127,6 +127,9 @@
         transform: translateX(100%);
         z-index: 51;
         padding: 150px 150px 50px 50px;
+        @include media(1200){
+            width: 350px;
+        }
         @include media(992){
             padding: 150px 50px 50px 50px;
         }
