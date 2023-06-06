@@ -710,6 +710,133 @@
   width: 100%;
 }
 
+.request__body {
+  background: #F6F6F6;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 52px 60px 60px;
+  position: relative;
+}
+
+.no-webp .request__body::before {
+  background: url(../img/request-ferry.png) center/cover no-repeat; }
+
+.request__body::before {
+  content: "";
+  position: absolute;
+  width: 315px;
+  height: 225px;
+  bottom: 0;
+  left: 0;
+}
+
+.request__title {
+  font-family: "Exo2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 120%;
+  color: #282A2D;
+}
+
+.request__form {
+  max-width: 438px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.request__input {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #282A2D;
+  border-radius: 10px;
+}
+
+.request__input::-webkit-input-placeholder {
+  color: #AEB5BF;
+}
+
+.request__input::-moz-placeholder {
+  color: #AEB5BF;
+}
+
+.request__input:-ms-input-placeholder {
+  color: #AEB5BF;
+}
+
+.request__input::-ms-input-placeholder {
+  color: #AEB5BF;
+}
+
+.request__input::placeholder {
+  color: #AEB5BF;
+}
+
+.request__input:focus {
+  border: 3px solid #282A2D !important;
+}
+
+.request__input::-webkit-outer-spin-button,
+.request__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.request input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.request__btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #F6F6F6;
+  padding: 16px 32px;
+  width: 100%;
+  background: #C8A35F;
+  border-radius: 6px;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+  margin-bottom: 20px;
+}
+
+.request__btn:hover {
+  background: #cfae72;
+}
+
+.request__p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #AEB5BF;
+}
+
 .contacts {
   padding: 100px 0;
 }
@@ -871,6 +998,15 @@ body main {
     width: 350px;
   }
 
+  .request__body::before {
+    width: 280px;
+    height: 165px;
+  }
+
+  .request__title {
+    font-size: 35px;
+  }
+
   .contacts__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -954,6 +1090,26 @@ body main {
     width: 70px;
     right: 70px;
     bottom: 40px;
+  }
+
+  .request__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  .request__body::before {
+    display: none;
+  }
+
+  .request__title {
+    margin-bottom: 40px;
+  }
+
+  .request__form {
+    max-width: 100%;
   }
 
   .contacts {
@@ -1100,6 +1256,11 @@ body main {
     display: none;
   }
 
+  .request__title {
+    font-size: 30px;
+    line-height: 120%;
+  }
+
   .contacts__title {
     font-size: 34px;
     line-height: 120%;
@@ -1139,6 +1300,10 @@ body main {
             transform: translateX(0%);
     width: 100%;
   }
+
+  .request__body {
+    border-radius: 0;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1147,4 +1312,12 @@ body main {
   }
 }
 
+@media (max-width: 359px) {
+  .request__title {
+    font-size: 25px;
+  }
+}
+
 .webp .intro { background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.52)), to(rgba(0, 0, 0, 0.52))), url(../img/intro-bg.webp) center/cover no-repeat; background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url(../img/intro-bg.webp) center/cover no-repeat; background: linear-gradient(0deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)), url(../img/intro-bg.webp) center/cover no-repeat; }
+
+.webp .request__body::before { background: url(../img/request-ferry.webp) center/cover no-repeat; }

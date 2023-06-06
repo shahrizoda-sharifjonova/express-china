@@ -1,0 +1,116 @@
+.request{
+    &__body{
+        background: #F6F6F6;
+        border-radius: 7px;
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 52px 60px 60px;
+        position: relative;
+        @include media(992){
+            flex-direction: column;
+            padding: 60px 20px;
+        }
+        @include media(575){
+            border-radius: 0;
+        }
+        &::before{
+            content: '';
+            background: url(../img/request-ferry.png) center / cover no-repeat;
+            position: absolute;
+            width: 315px;
+            height: 225px;
+            bottom: 0;
+            left: 0;
+            @include media(1200){
+                width: 280px;
+                height: 165px;
+            }
+            @include media(992){
+                display: none;
+            }
+        }
+    }
+    &__title{
+        font-family: 'Exo2';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 120%;
+        color: #282A2D;
+        @include media(1200){
+            font-size: 35px;
+        }
+        @include media(992){
+            margin-bottom: 40px;
+        }
+        @include media(768){
+            font-size: 30px;
+            line-height: 120%;
+        }
+        @include media(359){
+                font-size: 25px;
+        }
+    }
+    &__form{
+        max-width: 438px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        @include media(992){
+            max-width: 100%;
+        }
+    }
+    &__input{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #282A2D;
+        border-radius: 10px;
+        &::placeholder{
+            color: #AEB5BF;
+        }
+        &:focus{
+            border: 3px solid #282A2D !important;
+        }
+       &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+    &__btn{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 21px;
+        text-align: center;
+        color: #F6F6F6;
+        padding: 16px 32px;
+        width: 100%;
+        background: #C8A35F;
+        border-radius: 6px;
+        transition: 300ms ease;
+        margin-bottom: 20px;
+        &:hover{
+            background: lighten($color: #C8A35F, $amount: 5);
+        }
+    }
+    &__p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #AEB5BF;
+    }
+}
