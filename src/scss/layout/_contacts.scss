@@ -1,0 +1,77 @@
+.contacts{
+    padding: 100px 0;
+    @include media(992){
+        padding: 80px 0;
+    }
+    &__title{
+        font-family: 'Exo2';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 54px;
+        line-height: 120%;
+        color: #F6F6F6;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #C8A35F;
+        margin-bottom: 30px;
+        @include media(768){
+            font-size: 34px;
+            line-height: 120%;
+            padding-bottom: 6px;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media(1200){
+            flex-wrap: wrap;
+        }
+    }
+    &__li{
+        &:first-of-type, &:nth-of-type(2){
+            margin-bottom: 20px;
+            @include media(768){
+                margin-bottom: 0;
+            }
+        }
+        &:nth-of-type(2), &:nth-of-type(4){
+            a{
+                @include media(1200){
+                    justify-content: flex-end;
+                }
+                @include media(768){
+                    justify-content: flex-start;
+                }
+            }
+        }
+        &:not(:last-of-type){
+            @include media(768){
+                margin-bottom: 20px;
+            }
+        }
+        @include media(1200){
+            width: calc(50% - 10px);
+        }   
+        @include media(768){
+            width: 100%;
+        }
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        font-family: 'Exo2';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 120%;
+        text-decoration-line: underline;
+        color: #F6F6F6;     
+        @include media(768){
+            font-size: 16px;
+            line-height: 120%;
+        }
+        svg{
+            margin-right: 12px;
+        }
+    }
+}
