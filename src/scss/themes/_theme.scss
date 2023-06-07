@@ -17,6 +17,9 @@ body{
 body{
     width: 100%;
     overflow-x: hidden;
+    &.hidden{
+        overflow: hidden;
+    }
 }
 .wrapper{
     min-height: 100%;
