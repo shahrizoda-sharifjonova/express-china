@@ -105,3 +105,17 @@ window.onclick = (e) => {
   )
     menuToggle();
 };
+
+document.querySelectorAll('.services__button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.services__button').forEach(btn2 => {
+      btn2.classList.remove('active')
+    })
+    btn.classList.add('active')
+    const tar = btn.getAttribute('data-target');
+    document.querySelectorAll('.services__wrapper').forEach(item => {
+      item.classList.remove('active')
+    })
+    document.querySelector(`#${tar}`).classList.add('active');
+  })
+})
