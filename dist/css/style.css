@@ -708,6 +708,225 @@
   width: 100%;
 }
 
+.delivery {
+  max-width: 1660px;
+  width: 100%;
+  background: #F6F6F6;
+  border-radius: 7px 7px 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.delivery__title {
+  font-family: "Exo2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 120%;
+  color: #282A2D;
+  margin-bottom: 20px;
+}
+
+.delivery__desc {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  color: #46484B;
+  max-width: 765px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.delivery__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.delivery__card {
+  width: calc(25% - 22.5px);
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.delivery__subtitle {
+  font-family: "Exo2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  color: #282A2D;
+  margin-bottom: 20px;
+}
+
+.delivery__img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.delivery__img img {
+  width: 100%;
+}
+
+.delivery__p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  color: #46484B;
+}
+
+.delivery__p:last-of-type {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #EBEBEB;
+  margin-top: 10px;
+}
+
+.delivery__list {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.delivery__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Exo2";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  color: #282A2D;
+}
+
+.delivery__li:first-of-type {
+  margin-bottom: 18px;
+}
+
+.delivery__li svg {
+  margin-right: 10px;
+}
+
+.delivery__info {
+  font-family: "Exo2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 120%;
+  color: #282A2D;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.delivery__btn {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #C8A35F;
+  border-radius: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.delivery__btn:hover {
+  background: #cfae72;
+}
+
+.delivery__slider {
+  display: none;
+  width: 100%;
+}
+
+.delivery .swiper {
+  width: 100%;
+  overflow: hidden;
+  padding: 26px 0;
+}
+
+.delivery .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.delivery .swiper-pagination {
+  height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4px;
+}
+
+.delivery .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #AEB5BF;
+}
+
+.delivery .swiper-pagination-bullet:not(:last-of-type) {
+  margin-right: 6px;
+}
+
+.delivery .swiper-pagination-bullet-active {
+  width: 14px;
+  height: 14px;
+  background: #C8A35F;
+}
+
 .services {
   padding-top: 100px;
 }
@@ -2039,6 +2258,10 @@ body main {
 }
 
 @media (max-width: 1660px) {
+  .delivery {
+    border-radius: 0;
+  }
+
   .comments {
     border-radius: 0;
   }
@@ -2069,6 +2292,10 @@ body main {
 }
 
 @media (max-width: 1400px) {
+  .delivery__card {
+    width: calc(25% - 10px);
+  }
+
   .warehouses__img.first {
     max-width: 60%;
     width: 100%;
@@ -2100,6 +2327,27 @@ body main {
 @media (max-width: 1200px) {
   .header__list {
     width: 350px;
+  }
+
+  .delivery {
+    padding-bottom: 54px;
+  }
+
+  .delivery__desc {
+    margin-bottom: 14px;
+  }
+
+  .delivery__cards {
+    display: none;
+  }
+
+  .delivery__card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .delivery__slider {
+    display: block;
   }
 
   .services__buttons {
@@ -2262,6 +2510,10 @@ body main {
     width: 70px;
     right: 70px;
     bottom: 40px;
+  }
+
+  .delivery {
+    padding-bottom: 60px;
   }
 
   .services {
@@ -2582,6 +2834,31 @@ body main {
     display: none;
   }
 
+  .delivery__title {
+    font-size: 34px;
+    line-height: 120%;
+  }
+
+  .delivery__desc {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 4px;
+  }
+
+  .delivery__card {
+    padding: 30px 39px;
+  }
+
+  .delivery__img {
+    margin-bottom: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .delivery__list {
+    margin-left: -19px;
+  }
+
   .services__title {
     font-size: 34px;
     line-height: 120%;
@@ -2882,6 +3159,18 @@ body main {
 }
 
 @media (max-width: 359px) {
+  .delivery__card {
+    padding: 30px 20px;
+  }
+
+  .delivery__list {
+    margin-left: 0;
+  }
+
+  .delivery__info {
+    font-size: 24px;
+  }
+
   .company__left {
     padding: 18px;
   }

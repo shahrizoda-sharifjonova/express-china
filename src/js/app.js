@@ -77,6 +77,25 @@ new Swiper(".photos__swiper", {
     }
   }
 });
+new Swiper(".delivery__swiper", {
+  grabCursor: true,
+  // loop: true,
+  modules: [Pagination],
+  slidesPerView:1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".delivery__pagination",
+    clickable: true,
+  },
+  breakpoints:{
+    992:{
+      slidesPerView:3,
+    },
+    768:{
+      slidesPerView:2,
+    }
+  }
+});
 
 const menu = document.querySelectorAll(".menu");
 const headerList = document.querySelector(".header__list");
