@@ -124,10 +124,11 @@
             width: 100%;
         }
         &:first-of-type{
-            bottom: 117px;
-            right: 125px;
+            bottom: 135px;
+            right: 90px;
             @include media(1400){
                 right: 60px;
+                bottom: 115px;
             }
             @include media(1200){
                 right: 25px;
@@ -139,8 +140,8 @@
             }
         }
         &:nth-of-type(2){
-            top: 155px;
-            right: 125px;
+            top: 170px;
+            right: 85px;
             max-width: 105px;
             width: 100%;
             @include media(1400){
@@ -157,8 +158,8 @@
             }
         }
         &:nth-of-type(3){
-            top: 24px;
-            right: 295px;
+            top: 30px;
+            right: 275px;
             max-width: 145px;
             width: 100%;
             @include media(1400){
@@ -175,8 +176,8 @@
             }
         }
         &:last-of-type{
-            bottom: 270px;
-            right: 390px;
+            bottom: 310px;
+            right: 385px;
             max-width: 250px;
             width: 100%;
             @include media(1400){
