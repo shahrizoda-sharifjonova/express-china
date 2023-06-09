@@ -123,19 +123,6 @@
             height: 100%;
             object-fit: cover;
         }
-        &.first{
-            @include media(1400){
-                max-width: 60%;
-                width: 100%;
-            }
-            @include media(1200){
-                max-width: 55%;
-            }
-            @include media(992){
-                max-width: 100%;
-                margin-top: 30px;
-            }
-        }
     }
     &__num{
         position: absolute;
@@ -245,5 +232,24 @@
                 margin-bottom: 20px;
             }
         }
+    }
+    &__picture{
+            max-width: 700px;
+            width: 100%;
+            @include media(1400){
+                max-width: 650px;
+            }
+            @include media(1200){
+                max-width: 500px;
+            }
+            @include media(992){
+                margin-top: 30px;
+            }
+            @include media(768){
+                max-width: 100%;
+            }
+            img{
+                width: 100%;
+            }
     }
 }

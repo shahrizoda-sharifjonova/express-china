@@ -13,6 +13,9 @@
         padding-bottom: 16px;
         height: max-content;
     }
+    @include media(575){
+        background-position: 55% bottom!important;
+    }
     &__title{
         font-family: 'Exo2';
         font-style: normal;
