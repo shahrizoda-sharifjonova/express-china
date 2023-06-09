@@ -94,7 +94,9 @@
             margin-bottom: 30px;
         }
         &:first-of-type{
-            margin-right: 26px;
+            @include media(992){
+                margin-right: 26px;
+            }
             @include media(575){
                 margin-right: 0;
             }

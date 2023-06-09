@@ -1743,10 +1743,6 @@
   margin-bottom: 30px;
 }
 
-.warehouses__card:first-of-type {
-  margin-right: 26px;
-}
-
 .warehouses__img {
   position: relative;
   width: 100%;
@@ -3133,6 +3129,10 @@ body main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .warehouses__card:first-of-type {
+    margin-right: 26px;
   }
 
   .warehouses__card {
