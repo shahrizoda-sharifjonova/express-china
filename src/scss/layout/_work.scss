@@ -1,31 +1,34 @@
 .work{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/work-bg.png) center/ cover no-repeat;
+    background: linear-gradient(0deg, rgba(40, 42, 45, 0.3), rgba(40, 42, 45, 0.3)), url('../img/work-bg.png') center / cover no-repeat;
+    // background: linear-gradient(#282A2D), url('../img/work-bg.png') center/ cover no-repeat;
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
     z-index: 1;
     @include media(992){
         padding-top: 15px;
-        padding-bottom: 80px;
+        padding-bottom: 0px;
     }
     @include media(768){
-        background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(../img/work-bg.png) center/ cover no-repeat;
+        background: linear-gradient(0deg, rgba(40, 42, 45, 0.3), rgba(40, 42, 45, 0.3)), url('../img/work-bg.png') top center / cover no-repeat;
+        background-size: auto 50% !important;
     }
     &::before{
         content: "";
         position: absolute;
         width: 100%;
-        height: 200px;
-        background: linear-gradient(180deg,rgba(40,42,45,0) 0,#1b1b1b 33.95%,#1b1b1b 42.95%,rgba(40,42,45,0) 100%);
+        height: 100px;
+        background: linear-gradient(180deg, #282A2D 0%, rgba(40, 42, 45, 0)  100%);
         z-index: -1;
-        top: -100px;
+        top: 0;
     }
     &::after{
         content: '';
         position: absolute;
-        width: 100%;
+        width: 100%;    
+        bottom: 0px;
         height: 200px;
-        background: linear-gradient(180deg,rgba(0,0,0,0) 3.15%,#1b1b1b 41.84%,rgba(0,0,0,0) 99.18%);
+        background: linear-gradient(180deg, rgba(40, 42, 45, 0) 0%, #282A2D 100%);
         z-index: -1;
     }
     &__title{

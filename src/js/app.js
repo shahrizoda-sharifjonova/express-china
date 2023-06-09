@@ -12,6 +12,7 @@ new Swiper(".comments__swiper", {
   modules: [Navigation, Pagination],
   slidesPerView: 1,
   spaceBetween: 20,
+  watchSlidesProgress: true,
   navigation: {
     nextEl: ".comments__button-next",
     prevEl: ".comments__button-prev",

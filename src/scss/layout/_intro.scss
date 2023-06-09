@@ -99,11 +99,6 @@
         right: 127px;
         transition: 300ms ease;
         @include media(992){
-            width: 70px;
-            right: 70px;
-            bottom: 40px;
-        }
-        @include media(768){
             display: none;
         }
         &:hover{
