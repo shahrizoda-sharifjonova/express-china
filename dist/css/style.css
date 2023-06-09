@@ -927,6 +927,77 @@
   background: #C8A35F;
 }
 
+.packaging {
+  max-width: 1660px;
+  width: 100%;
+  background: #F6F6F6;
+  border-radius: 0 0 7px 7px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+}
+
+.packaging__title {
+  font-family: "Exo2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 120%;
+  color: #282A2D;
+  margin-bottom: 40px;
+}
+
+.packaging__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.packaging__card {
+  width: calc(33.333% - 20px);
+}
+
+.packaging__card:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.packaging__img {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 19px 52px;
+  margin-bottom: 24px;
+}
+
+.packaging__img img {
+  width: 100%;
+}
+
+.packaging__subtitle {
+  font-family: "Exo2";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  color: #282A2D;
+}
+
 .services {
   padding-top: 100px;
 }
@@ -2262,6 +2333,10 @@ body main {
     border-radius: 0;
   }
 
+  .packaging {
+    border-radius: 0;
+  }
+
   .comments {
     border-radius: 0;
   }
@@ -2514,6 +2589,19 @@ body main {
 
   .delivery {
     padding-bottom: 60px;
+  }
+
+  .packaging__title {
+    margin-bottom: 20px;
+  }
+
+  .packaging__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .packaging__card {
+    width: calc(50% - 15px);
   }
 
   .services {
@@ -2859,6 +2947,20 @@ body main {
     margin-left: -19px;
   }
 
+  .packaging__title {
+    font-size: 34px;
+    line-height: 120%;
+  }
+
+  .packaging__img {
+    padding: 19px;
+  }
+
+  .packaging__subtitle {
+    font-size: 20px;
+    line-height: 120%;
+  }
+
   .services__title {
     font-size: 34px;
     line-height: 120%;
@@ -3063,6 +3165,10 @@ body main {
     -webkit-transform: translateX(0%);
         -ms-transform: translateX(0%);
             transform: translateX(0%);
+    width: 100%;
+  }
+
+  .packaging__card {
     width: 100%;
   }
 
